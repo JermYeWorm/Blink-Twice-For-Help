@@ -1,6 +1,47 @@
 # Digital Design Automation Scripts
 
-This directory contains two scripts for automating synthesis and simulation tasks using Cadence tools. The top module in this project should be `snn_fixed_16_2_4_4_2`, substitude all the `my_top_module` in the example.
+This directory contains scripts for automating synthesis, simulation, and place & route tasks using Cadence tools. The top module in this project should be `snn_fixed_16_2_4_4_2`. Substitute all instances of `my_top_module` in the examples with this module name.
+
+## Folder Structure
+
+- **lib/**  
+  Contains standard cell libraries and any custom library files required for synthesis, simulation, or PnR.
+
+- **PnR/**  
+  Place and Route (PnR) directory for Cadence Innovus.
+  - `run_PnR`: Main script to launch PnR.
+  - **scripts/**: TCL scripts for floorplanning, placement, routing, and verification.
+  - **work/**: Working directory for PnR outputs and intermediate files.
+    - `design/`: Design database and intermediate files generated during PnR.
+    - `log/`: Log files from PnR tool runs.
+    - `output/`: Final output files from PnR, such as GDSII, DEF, and other deliverables.
+    - `report/`: Reports generated during PnR, including timing, area, and DRC/LVS results.
+    - `timing/`: Detailed timing analysis reports.
+    - `work/`: Additional temporary or intermediate files used by the PnR process.
+
+- **simulation/**  
+  Simulation environment for Cadence Xcelium.
+  - `run_sim`: Main script to launch simulation.
+  - **script/**: Helper scripts for simulation setup.
+  - **sdf/**: Contains SDF files and command scripts for timing simulation.
+  - **testbench/**: Testbench source files for simulation.
+  - **work/**: Working directory for simulation outputs and intermediate files.
+    - Stores compiled simulation libraries, simulation logs, waveform files, and any temporary files generated during simulation runs.
+
+- **source/**  
+  RTL source files (Verilog) for the project.
+  - `fixed_16_synapse.v`, `IZ_pipeline_16.v`, `snn_fixed_16_2_4_4_2.v`: Main design files.
+
+- **synthesis/**  
+  Synthesis environment for Cadence Genus.
+  - `run_syn`: Main script to launch synthesis.
+  - **scripts/**: Helper scripts for synthesis setup.
+  - **work/**: Working directory for synthesis outputs, logs, and reports.
+    - `log/`: Log files from synthesis runs.
+    - `report/`: Reports generated during synthesis, such as timing, area, and utilization.
+    - `output/`: Final output files from synthesis, such as the final netlist and summary reports.
+
+---
 
 ## Scripts Overview
 
