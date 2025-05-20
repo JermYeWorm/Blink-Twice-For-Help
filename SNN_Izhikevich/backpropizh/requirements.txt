@@ -1,0 +1,9 @@
+jupyterlab
+torchvision
+torchdata
+ipython
+ipywidgets
+ipympl
+tabulate
+brevitas
+-e ./snntorch
