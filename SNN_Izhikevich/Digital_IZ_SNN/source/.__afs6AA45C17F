@@ -1,0 +1,44 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/09/2023 12:14:39 AM
+// Design Name: 
+// Module Name: fixed_16_network
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module fixed_16_network
+#(
+    parameter num_young = 5,
+    parameter num_middle = 0,
+    parameter num_mature = 5
+)
+(
+    input clk,
+    input rst_n,
+    input [783:0] data,
+
+    output [1:0] class
+    );
+
+    wire [784*10-1:0] connect_input_hidden [15:0];
+    wire [19:0] connect_hidden_synapse [15:0];
+
+    reg [9:0] current_hidden [15:0];
+    reg [1:0] current_output [15:0];
+
+
+endmodule

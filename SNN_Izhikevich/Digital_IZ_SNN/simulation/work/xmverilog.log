@@ -1,0 +1,59 @@
+xmverilog(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xmverilog	24.09-s005: Started on Apr 11, 2025 at 09:48:31 EDT
+xmverilog
+	../testbench/tb_fixed_16_synapse.v
+	-access
+	+rw
+	-mess
+	+gui
+	-dumptiming
+	timingdump.log
+	-timescale
+	1ns/1ps
+file: ../testbench/tb_fixed_16_synapse.v
+	module worklib.tb_fixed_16_synapse:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+        .weight(weight)
+              |
+xmelab: *W,CUVUKP (../testbench/tb_fixed_16_synapse.v,47|14): The name 'weight' is not declared in the instantiated module (defined at /afs/glue.umd.edu/home/glue/y/i/yihuiw/home/course/ENEE408D_S25/project/SNN/IZ_snn/source/fixed_16_synapse.v,3).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fixed_16_synapse:v <0x011eb6e1>
+			streams:   4, words:  4719
+		worklib.tb_fixed_16_synapse:v <0x26f91db0>
+			streams:   9, words:  2562
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              11      11
+		Scalar wires:            3       -
+		Vectored wires:          1       -
+		Always blocks:           2       2
+		Initial blocks:          6       6
+		Pseudo assignments:      3       -
+		Process Clocks:          1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_fixed_16_synapse:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /afs/glue.umd.edu/department/enee/software/cadenceIC23/installs/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM d^C
+xcelium> exit
+TOOL:	xmverilog	24.09-s005: Exiting on Apr 11, 2025 at 10:06:41 EDT  (total: 00:21:26)
+6_synapse.rst_n tb_fixed_16_synapse.spike
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 1006 NS + 0
+../testbench/tb_fixed_16_synapse.v:70         $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmverilog	24.09-s005: Exiting on Apr 11, 2025 at 10:06:31 EDT  (total: 00:18:00)

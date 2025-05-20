@@ -1,0 +1,43 @@
+########################################################################################
+#                                                                                      #
+# Created by Genus(TM) Synthesis Solution 21.19-s055_1 on Sat May 03 22:00:25 EDT 2025 #
+#                                                                                      #
+########################################################################################
+
+set_design_top counter
+
+upf_version 2.0
+
+create_supply_port vpwr
+
+create_supply_port vgnd
+
+create_supply_net VDD
+
+create_supply_net GND
+
+connect_supply_net VDD \
+	 -ports vpwr
+
+connect_supply_net GND \
+	 -ports vgnd
+
+create_supply_set SS_VDD \
+	 -function { power VDD } \
+	 -function { ground GND } \
+	 -function { nwell VDD } \
+	 -function { pwell GND }
+
+create_power_domain PD_VDD \
+	 -include_scope \
+	 -supply { primary SS_VDD }
+
+set_port_attributes \
+	 -applies_to both \
+	 -elements . \
+	 -driver_supply SS_VDD \
+	 -receiver_supply SS_VDD
+
+## BEGIN GENERATED connect_supply_net ##
+
+## END GENERATED connect_supply_net ##

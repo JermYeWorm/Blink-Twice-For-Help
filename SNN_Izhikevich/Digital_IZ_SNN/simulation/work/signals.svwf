@@ -1,0 +1,87 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.rst_n}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.spike_in[1:0]}]}
+	} ]]
+waveform hierarchy expand $id
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.spike_layer_1[3:0]}]}
+	} ]]
+waveform hierarchy expand $id
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.spike_layer_2[3:0]}]}
+	} ]]
+waveform hierarchy expand $id
+set id [waveform add -signals [subst  {
+	{[format {tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.spike_out[1:0]}]}
+	} ]]
+waveform hierarchy expand $id
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_1[0].u_layer_1_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13569 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_1[1].u_layer_1_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13569 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_1[2].u_layer_1_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 12923 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_1[3].u_layer_1_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 12923 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_2[0].u_layer_2_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13140 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_2[1].u_layer_2_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13140 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_2[2].u_layer_2_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13140 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_2[3].u_layer_2_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 13140 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_output[0].u_layer_output_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 12871 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {signed(tb_snn_fixed_16_2_4_4_2.u_snn_fixed_16_2_4_4_2.gen_neurons_layer_output[1].u_layer_output_IZ_pipeline_16.v)}]}
+	} ]]
+waveform format $id -radix %x -trace analogSampleAndHold
+waveform axis range $id -for default -min -24773 -max 12871 -scale linear
+
+waveform xview limits 0 2000ns

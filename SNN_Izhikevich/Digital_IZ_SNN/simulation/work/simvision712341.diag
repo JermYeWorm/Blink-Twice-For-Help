@@ -1,0 +1,62 @@
+*** Message Type: info ***
+When: Fri Apr 11 12:28:40 AM EDT 2025
+SimVision started.
+Version: TOOL:  simvision(64)   24.09-s005
+User: yihuiw
+Host: compute7.eng.umd.edu
+Platform: Linux/x86_64/4.18.0-553.30.1.el8_10.x86_64
+Started: Fri Apr 11 12:28:40 AM EDT 2025
+Command: /afs/glue.umd.edu/department/enee/software/cadenceIC23/installs/XCELIUM2409/tools.lnx86/simvision/bin/64bit/simvision.exe tb_snn_fixed_16_2_4_4_2.trn
+Work Directory: /afs/glue.umd.edu/home/glue/y/i/yihuiw/home/course/ENEE408D_S25/project/SNN/IZ_snn/simulation/work
+ 
+*** Message Type: info ***
+When: Fri Apr 11 12:28:41 AM EDT 2025
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Fri Apr 11 12:28:43 AM EDT 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Fri Apr 11 12:28:44 AM EDT 2025
+Create utility window: "Properties"
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:05:28 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis4")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:06:16 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis5")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:06:50 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis6")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:07:33 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis7")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:08:43 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis8")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:09:56 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis9")
+ 
+*** Message Type: error ***
+When: Fri Apr 11 01:11:47 AM EDT 2025
+bad signal handle "@public@77": not a vobject
+    (while updating tree "::PrintEngine::tree0" attached to time axis "::PrintEngine::timeaxis10")
+ 
+*** Message Type: info ***
+When: Fri Apr 11 01:15:32 AM EDT 2025
+SimVision Exit.
+ 

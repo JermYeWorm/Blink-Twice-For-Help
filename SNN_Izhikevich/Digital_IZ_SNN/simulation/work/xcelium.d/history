@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(11Apr2025:09:48:31):( xmverilog ../testbench/tb_fixed_16_synapse.v -access +rw -mess +gui -dumptiming timingdump.log -timescale 1ns/1ps )&&(./xcelium.d/env.d/env.history.11Apr2025_09_48_31)

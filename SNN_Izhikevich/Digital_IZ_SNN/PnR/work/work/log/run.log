@@ -1,0 +1,74 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	-execute win; set BASENAME snn_fixed_16_2_4_4_2; -files scripts/top-level.tcl -log work/log/run.log -cmd work/log/run.cmd -overwrite 
+Date:		Tue May 20 13:32:28 2025
+Host:		compute3.eng.umd.edu (x86_64 w/Linux 4.18.0-553.30.1.el8_10.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E5-2643 v3 @ 3.40GHz 20480KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[13:32:28.263577] Configured Lic search path (21.01-s002): 1700@cadencelic.eng.umd.edu
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (256 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> define_proc_arguments ViaFillQor -info {This procedure extracts Viafill details from innovus db} -define_args {
+        {-window "window coordinates" "" list optional}
+        {-window_size "window size in microns" "" string optional}
+    
+    }
+[INFO] Loading Pegasus 23.14 fill procedures
+<CMD> define_proc_arguments ProcessFills -info {This procedure processes Fill types} -define_args {
+    {-fillInfo "Design Fill data" "" list required}
+				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
+				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
+    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
+}
+<CMD> define_proc_arguments FillQor -info {This procedure extracts fill details from innovus db} -define_args {
+    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
+				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
+				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
+    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
+}
+<CMD> define_proc_arguments ProcessFills_fast -info {This procedure processes Fill types} -define_args {
+    {-fillInfo "Design Fill data" "" list required}
+				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
+				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
+    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
+}
+<CMD> define_proc_arguments FillQor_fast -info {This procedure extracts fill details from innovus db} -define_args {
+    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
+				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
+				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
+    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
+}
+<CMD> define_proc_arguments ProcessFills_fast_stampOnly -info {This procedure processes Fill types} -define_args {
+    {-fillInfo "Design Fill data" "" list required}
+	
+}
+<CMD> define_proc_arguments FillQor_fast_stampOnly -info {This procedure extracts fill details from innovus db} -define_args {
+    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
+}
+Executing cmd 'win; set BASENAME snn_fixed_16_2_4_4_2;' ...
+<CMD> win
+**ERROR: (IMPSYT-6696):	Initfile (scripts/top-level.tcl) does not exist.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue May 20 13:33:47 2025
+  Total CPU time:     0:00:21
+  Total real time:    0:01:35
+  Peak memory (main): 998.85MB
+
+
+*** Memory Usage v#1 (Current mem = 1076.949M, initial mem = 487.012M) ***
+*** Message Summary: 0 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:21.4, real=0:01:19, mem=1076.9M) ---

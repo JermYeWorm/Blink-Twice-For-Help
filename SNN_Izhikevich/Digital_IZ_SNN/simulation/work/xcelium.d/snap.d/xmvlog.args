@@ -1,0 +1,18 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.24.09.d
+-RUNMODE
+../testbench/tb_fixed_16_synapse.v
+-CDSLIB
+./xcelium.d/run.lnx8664.24.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.24.09.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.24.09.d/xllibs
+-ALLOWUNBOUND

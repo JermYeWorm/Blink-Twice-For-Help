@@ -1,0 +1,13 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+../testbench/tb_fixed_16_synapse.v
+-access
++rw
+-mess
++gui
+-dumptiming
+timingdump.log
+-timescale
+1ns/1ps

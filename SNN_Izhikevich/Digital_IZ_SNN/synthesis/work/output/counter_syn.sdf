@@ -1,0 +1,63 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "counter")
+  (DATE        "Sat May 03 22:00:27 EDT 2025")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "21.19-s055_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.8)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::25.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "scs130hd_dfrtp_1")
+     (INSTANCE count_out_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESETB (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESETB Q () (::186))
+          (IOPATH CLK Q (::310) (::345))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge RESETB) (posedge CLK) (::-228) (::296))
+        (SETUPHOLD (negedge D) (posedge CLK) (::121) (::-53))
+        (SETUPHOLD (posedge D) (posedge CLK) (::79) (::-52))
+     )
+  )
+  (CELL
+     (CELLTYPE "scs130hd_xor2_1")
+     (INSTANCE g21__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A X (::137) (::154))
+          (IOPATH B X (::128) (::131))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "scs130hd_dfrbp_1")
+     (INSTANCE count_out_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESETB (::0.0))
+          (PORT CLK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH RESETB Q () (::234))
+          (IOPATH CLK Q (::341) (::395))
+          (IOPATH RESETB QN (::279) ())
+          (IOPATH CLK QN (::439) (::371))
+        )
+     )
+     (TIMINGCHECK
+        (RECREM (posedge RESETB) (posedge CLK) (::-225) (::296))
+        (SETUPHOLD (negedge D) (posedge CLK) (::114) (::-46))
+        (SETUPHOLD (posedge D) (posedge CLK) (::65) (::-40))
+     )
+  )
+)

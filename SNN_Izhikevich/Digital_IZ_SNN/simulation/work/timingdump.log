@@ -1,0 +1,24 @@
+<design_info>
+<scope>
+  <decl
+    lib="worklib" cell="tb_fixed_16_synapse" view="v"
+    fullname="tb_fixed_16_synapse"
+    filelineno="23" filepath="../testbench/tb_fixed_16_synapse.v"
+    lang="verilog"
+    tunit="ns" punit="ps"
+    no_of_instances="1" no_of_primitives="0" no_of_udps="0"
+  />
+</scope>
+
+<scope>
+  <decl
+    lib="worklib" cell="fixed_16_synapse" view="v"
+    fullname="tb_fixed_16_synapse.u_fixed_16_synapse"
+    filelineno="3" filepath="/afs/glue.umd.edu/home/glue/y/i/yihuiw/home/course/ENEE408D_S25/project/SNN/IZ_snn/source/fixed_16_synapse.v"
+    lang="verilog"
+    tunit="ns" punit="ps"
+    no_of_instances="0" no_of_primitives="0" no_of_udps="0"
+  />
+</scope>
+
+</design_info>

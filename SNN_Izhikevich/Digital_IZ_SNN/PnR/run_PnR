@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# a simple bash script for Cadence Innovus
+
+echo "Innovus Plance & Route Control Script"
+
+# reset control variables
+gui=0
+topmodule=""
+newtopflag=0
+top=0
+
+# read and process input arguments
+for arg in $@
+do
+    if [ "$arg" == "-gui" ]
+    then
+	gui=1
+    elif [ $newtopflag == 1 ]
+    then
+	topmodule=$arg
+	newtopflag=0
+    elif [ "$arg" == "-top" ]
+    then
+	newtopflag=1
+        top=1
+    fi
+done
+
+echo ""
+pushd work
+
+
+if [ $gui == 1 ]
+then
+   if [ $top == 1 ]
+   then
+      innovus -execute "win; set BASENAME $topmodule;" -files ../scripts/top-level.tcl -log ../work/log/run.log -cmd ../work/log/run.cmd -overwrite
+   else
+      innovus
+   fi
+else
+   if [ $top == 1 ]
+   then
+      innovus -execute "win; set BASENAME $topmodule;" -files ../scripts/top-level.tcl -log ../work/log/run.log -cmd ../work/log/run.cmd -overwrite -nowin
+   else
+      innovus -nowin
+   fi
+fi
+
+popd
+
+
+	
