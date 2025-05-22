@@ -9,12 +9,10 @@ monitoring these parameters often lack the temporal resolution,
 accuracy, or adaptability required for real-time applications. Eye
 movements, specifically blink duration and intensity, provide
 a promising, non-invasive biosignal for continuous tracking of
-cognitive states. In this work, we present a mixed-signal neuromorphic System-
-on-Chip (SoC) designed for real-time, low-power decoding of
+cognitive states. In this work, we present a mixed-signal neuromorphic System-on-Chip (SoC) designed for real-time, low-power decoding of
 blink-based electroencephalogram (EEG) biosignals. Designed
 using the open-source 1.8V SkyWater 130nm CMOS process,
-the system integrates analog front-end circuitry with delta-
-modulation-based spike encoding and on-chip classification via a
+the system integrates analog front-end circuitry with delta-modulation-based spike encoding and on-chip classification via a
 Spiking Neural Network (SNN). Our design supports applications
 in sleep and attention monitoring, cognitive workload analysis,
 and potential neuromodulation therapies for neurodegenerative
