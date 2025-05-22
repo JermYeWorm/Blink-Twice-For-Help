@@ -1,3 +1,1 @@
-![alt text](https://github.com/JermYeWorm/Neural_Interface_Chip/blob/main/architecture.png?raw=true)
-
 ![alt text](https://github.com/JermYeWorm/Neural_Interface_Chip/blob/main/full_chip_layout.png?raw=true)
