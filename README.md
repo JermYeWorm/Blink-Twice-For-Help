@@ -1,8 +1,9 @@
-# Blink Twice For Help: A Brain-Inspired Spike Encoder and SNN SoC for Continuous Cognitive State Monitoring
+# Blink Twice For Help
+
+![alt text](https://github.com/JermYeWorm/Neural_Interface_Chip/blob/main/full_chip_layout.png?raw=true)
 
 ## Abstract
-Sleep quality, attentional state, and real-time cogni
-tive assessment are increasingly central to both clinical research
+Sleep quality, attentional state, and real-time cognitive assessment are increasingly central to both clinical research
 and consumer health technologies. Conventional methods for
 monitoring these parameters often lack the temporal resolution,
 accuracy, or adaptability required for real-time applications. Eye
@@ -28,5 +29,4 @@ analog domain and 43 μW in the digital domain.
 <br><br>
 [Full Paper](https://github.com/JermYeWorm/Blink-Twice-For-Help/blob/main/Neural_Interface_Full_Paper.pdf)
 <br><br>
-![alt text](https://github.com/JermYeWorm/Neural_Interface_Chip/blob/main/full_chip_layout.png?raw=true)
 
