@@ -1,9 +1,5 @@
 # Blink Twice For Help: A Brain-Inspired Spike Encoder and SNN SoC for Continuous Cognitive State Monitoring
 
-<br><br>
-[Full Paper](https://github.com/JermYeWorm/Blink-Twice-For-Help/blob/main/Neural_Interface_Full_Paper.pdf)
-<br><br>
-
 ## Abstract
 Sleep quality, attentional state, and real-time cogni
 tive assessment are increasingly central to both clinical research
@@ -29,6 +25,8 @@ blink data, and verification via the Cadence Design Suite. The
 final chip occupies 0.742 mm^2 of a 1.6 mm × 1.6 mm die,
 consisting of 276,542 transistors, and consumes 63.5 μW in the
 analog domain and 43 μW in the digital domain.
-
+<br><br>
+[Full Paper](https://github.com/JermYeWorm/Blink-Twice-For-Help/blob/main/Neural_Interface_Full_Paper.pdf)
+<br><br>
 ![alt text](https://github.com/JermYeWorm/Neural_Interface_Chip/blob/main/full_chip_layout.png?raw=true)
 
